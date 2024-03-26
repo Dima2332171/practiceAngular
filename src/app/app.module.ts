@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {HttpClient, HttpClientModule} from "@angular/common/http";
 import { DateComponent } from './date/date.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -15,6 +16,8 @@ import { DateComponent } from './date/date.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

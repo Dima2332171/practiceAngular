@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DateComponent implements OnInit{
   message: string = '';
+  items = ['Angular', 'React', 'Vue', 'Bootstrap', 'Node.js'];
+  isCollapsed:boolean = true;
+  text:string = 'Hello world'
+  toggleCollapse(){
+    this.isCollapsed = !this.isCollapsed;
+  }
   constructor() {
     setInterval(()=>{
       this.message = new Date().toLocaleTimeString();
@@ -14,5 +20,9 @@ export class DateComponent implements OnInit{
   }
   ngOnInit(){
 
+  }
+
+  myEvent(event:any){
+    console.log(event)
   }
 }
